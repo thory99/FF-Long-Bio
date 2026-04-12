@@ -6,7 +6,7 @@
 
 SITE_CONFIG = {
     # Site Identity
-    "site_name": "THORYXFF",
+    "site_name": "THORY",
     "site_logo_emoji": "⚡",
     
     # Free Fire Version
