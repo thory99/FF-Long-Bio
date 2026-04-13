@@ -25,5 +25,9 @@ SITE_CONFIG = {
     "default_region": "IND",
     
     # Footer
-    "footer_text": "THORYXFF • Neon Bio Injector"
+    "footer_text": "THORYXFF • Neon Bio Injector",   # ← comma lagao!
+    
+    # Video Tutorial Links (NEW)
+    "howto_video_link": "https://www.youtube.com/@GamesOfThory",
+    "create_own_video_link": "https://www.youtube.com/@GamesOfThory"   # ← last line, no comma
 }
