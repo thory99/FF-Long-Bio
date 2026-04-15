@@ -26,7 +26,7 @@ except ImportError:
         "popup_message": "Subscribe to YouTube & Follow on Instagram to unlock the Bio Injector!",
         "bio_char_limit": 300,
         "default_region": "IND",
-        "footer_text": "THORYXFF • Neon Bio Injector"
+        "footer_text": "FREE FIRE • Long Bio Injector"
     }
 
 app.config['SITE_CONFIG'] = SITE_CONFIG
