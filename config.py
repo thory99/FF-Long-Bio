@@ -28,7 +28,7 @@ SITE_CONFIG = {
     "footer_text": "THORYXFF • Neon Bio Injector",   # ← comma is correct here!
     
     # Video Tutorial Links
-    "howto_video_link": "https://www.youtube.com/@GamesOfThory",
+    "howto_video_link": "https://youtu.be/VwWdm9UFZRM",
     "create_own_video_link": "https://www.youtube.com/@GamesOfThory",   # ← last line, no comma
 
 
