@@ -72,6 +72,47 @@ SITE_CONFIG = {
         {
             "name": "RAJA",
             "bio": "[B][C][I][B22222]Raja hoon main game ka, hai yeh taaj\n[DC143C]Jo mere saamne aaya, woh hua barbaad\n[FF6347]Tera kya kaam yahan, ab ja bach ke"
-        }
+        },
+        {
+        "name": "THORY PRIME",
+        "bio": "[B][C][I][FEA100]╭━━━⎾ THORY PRIME ⏋━━━╮\n┃ ▣ AI SYSTEM ACTIVE ▣ ┃\n┃ ▣ TARGET LOCK ENABLE ▣ ┃\n┃ ▣ FF ELITE CONTROLLER ▣ ┃\n┃ ▣ DOMINATION MODE ON ▣ ┃\n╰━━━◎━━━◎━━━◎━━━╯"
+    },
+    {
+        "name": "DARK ENTITY",
+        "bio": "[B][C][I][8B0000]╔════⎾ DARK ENTITY ⏋════╗\n║ ■ UNKNOWN PRESENCE ■ ║\n║ ■ NO TRACE FOUND ■ ║\n║ ■ SILENT EXECUTION ■ ║\n║ ■ END SIGNAL ACTIVE ■ ║\n╚════◎════◎════◎════╝"
+    },
+    {
+        "name": "CYBER CORE",
+        "bio": "[B][C][I][00FFFF]┏━━━⎾ CYBER CORE ⏋━━━┓\n┃ SYSTEM OVERRIDE INIT ┃\n┃ DATA CONTROL ONLINE ┃\n┃ ENEMY ACCESS DENIED ┃\n┃ FINAL PROTOCOL RUN ┃\n┗━━━◎━━━◎━━━◎━━━┛"
+    },
+    {
+        "name": "ALPHA ZONE",
+        "bio": "[B][C][I][FF8C00]╭════⎾ ALPHA ZONE ⏋════╮\n│ LEADER SIGNAL ACTIVE │\n│ CONTROL LEVEL MAXIMUM │\n│ ENTRY NOT PERMITTED │\n│ VICTORY PATH LOCKED │\n╰════◎════◎════◎════╯"
+    },
+    {
+        "name": "SHADOW GRID",
+        "bio": "[B][C][I][696969]┌────⎾ SHADOW GRID ⏋────┐\n│ VISIBILITY ZERO MODE │\n│ MOVEMENT UNDETECTED │\n│ ATTACK FROM DARK │\n│ EXIT WITHOUT TRACE │\n└────◎────◎────◎────┘"
+    },
+    {
+        "name": "SNIPER X",
+        "bio": "[B][C][I][32CD32]╔═══⎾ SNIPER X ⏋═══╗\n║ TARGET SCAN COMPLETE ║\n║ AIM PRECISION HIGH ║\n║ DISTANCE CONTROLLED ║\n║ IMPACT CONFIRMED ║\n╚═══◎═══◎═══◎═══╝"
+    },
+    {
+        "name": "RUTHLESS CORE",
+        "bio": "[B][C][I][FF2400]╭────⎾ RUTHLESS CORE ⏋────╮\n│ NO MERCY EXECUTION │\n│ DAMAGE LEVEL EXTREME │\n│ DEFENSE SYSTEM FAIL │\n│ FINAL STRIKE DEPLOY │\n╰────◎────◎────◎────╯"
+    },
+    {
+        "name": "STORM UNIT",
+        "bio": "[B][C][I][1E90FF]┏════⎾ STORM UNIT ⏋════┓\n┃ FORCE ENTRY ACTIVE ┃\n┃ AREA UNDER CONTROL ┃\n┃ RESISTANCE BROKEN ┃\n┃ TOTAL CLEAR ZONE ┃\n┗════◎════◎════◎════┛"
+    },
+    {
+        "name": "PHANTOM CODE",
+        "bio": "[B][C][I][9370DB]╔────⎾ PHANTOM CODE ⏋────╗\n║ EXISTENCE UNKNOWN ║\n║ SIGNAL NOT FOUND ║\n║ ACCESS RESTRICTED ║\n║ SYSTEM COMPROMISED ║\n╚────◎────◎────◎────╝"
+    },
+    {
+        "name": "FINAL BOSS",
+        "bio": "[B][C][I][DC143C]╭═══⎾ FINAL BOSS ⏋═══╮\n│ LEVEL IMPOSSIBLE │\n│ ENTRY ONE WAY │\n│ DEFEAT UNLIKELY │\n│ ENDGAME ACTIVE │\n╰═══◎═══◎═══◎═══╯"
+    }
+
     ]
 }
