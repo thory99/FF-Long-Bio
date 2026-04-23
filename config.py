@@ -73,7 +73,7 @@ SITE_CONFIG = {
             "name": "RAJA",
             "bio": "[B][C][I][B22222]Raja hoon main game ka, hai yeh taaj\n[DC143C]Jo mere saamne aaya, woh hua barbaad\n[FF6347]Tera kya kaam yahan, ab ja bach ke"
         },
-        [
+        
     {
         "name": "THORY PRIME",
         "bio": "[B][C][I][FEA100]╭━━━⎾ THORY PRIME ⏋━━━╮\n┃ ▣ AI SYSTEM ACTIVE ▣ ┃\n┃ ▣ TARGET LOCK ENABLE ▣ ┃\n┃ ▣ FF ELITE CONTROLLER ▣ ┃\n┃ ▣ DOMINATION MODE ON ▣ ┃\n╰━━━◎━━━◎━━━◎━━━╯"
