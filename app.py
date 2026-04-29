@@ -62,10 +62,10 @@ def get_region_url(region):
         "US": "https://client.us.freefiremobile.com",
         "SAC": "https://client.us.freefiremobile.com",
         "NA": "https://client.us.freefiremobile.com",
-        "ME": "https://clientbp.common.ggbluefox.com",
-        "TH": "https://clientbp.common.ggbluefox.com"
+        "ME": "https://clientbp.common.ggpolarbear.com",
+        "TH": "https://clientbp.common.ggpolarbear.com"
     }
-    return region_urls.get(region.upper(), "https://clientbp.ggblueshark.com")
+    return region_urls.get(region.upper(), "https://clientbp.ggpolarbear.com")
 
 def get_account_from_eat(eat_token):
     try:
@@ -127,7 +127,7 @@ def update_bio_with_jwt(jwt_token, bio_text, region):
         elif "us" in base_url:
             host = "client.us.freefiremobile.com"
         elif "common" in base_url:
-            host = "clientbp.common.ggbluefox.com"
+            host = "clientbp.common.ggpolarbear.com"
         else:
             host = "clientbp.ggblueshark.com"
         
