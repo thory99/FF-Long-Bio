@@ -17,6 +17,8 @@ SITE_CONFIG = {
     "instagram_link": "https://www.instagram.com/THORYXFF",
     
     # Popup Settings
+    "promo_popup_enabled": false,
+    
     "popup_title": "⚡ JOIN THE COMMUNITY ⚡",
     "popup_message": "Subscribe to YouTube & Follow on Instagram to unlock the Bio Injector!",
     
