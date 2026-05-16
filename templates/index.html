@@ -527,35 +527,38 @@ const GRADIENTS = [
     });
   }
   
-  // Welcome popup - No emojis, SVG icons only
-  if(CFG.popup_title && !sessionStorage.getItem('wc_shown')){
+  // Welcome popup - Conditional based on promo_popup_enabled
+if(CFG.promo_popup_enabled && !sessionStorage.getItem('wc_shown')){
     sessionStorage.setItem('wc_shown','1');
     document.getElementById('welcomeTitle').textContent = CFG.popup_title || "JOIN COMMUNITY";
     document.getElementById('welcomeMsg').textContent = CFG.popup_message || "Follow to unlock Bio Injector!";
     const wBtns = document.getElementById('welcomeBtns');
     let ytClicked = false, igClicked = false;
     if(CFG.youtube_link) {
-      let ytBtn = document.createElement('button');
-      ytBtn.className = 'btn btn-primary';
-      ytBtn.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="margin-right:5px"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.33 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="#FFFFFF"/></svg> Subscribe on YouTube';
-      ytBtn.onclick = () => { window.open(CFG.youtube_link, '_blank'); ytClicked = true; checkBoth(); };
-      wBtns.appendChild(ytBtn);
+        let ytBtn = document.createElement('button');
+        ytBtn.className = 'btn btn-primary';
+        ytBtn.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="margin-right:5px"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.33 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="#FFFFFF"/></svg> Subscribe on YouTube';
+        ytBtn.onclick = () => { window.open(CFG.youtube_link, '_blank'); ytClicked = true; checkBoth(); };
+        wBtns.appendChild(ytBtn);
     }
     if(CFG.instagram_link) {
-      let igBtn = document.createElement('button');
-      igBtn.className = 'btn btn-primary';
-      igBtn.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="margin-right:5px"><rect x="2" y="2" width="20" height="20" rx="4" fill="url(#instaGradSmall)"/><circle cx="12" cy="12" r="4" fill="none" stroke="#FFFFFF" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1.5" fill="#FFFFFF"/><defs><linearGradient id="instaGradSmall" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#fdf497"/><stop offset="40%" stop-color="#fd5949"/><stop offset="60%" stop-color="#d6249f"/><stop offset="100%" stop-color="#285aeb"/></linearGradient></defs></svg> Follow on Instagram';
-      igBtn.onclick = () => { window.open(CFG.instagram_link, '_blank'); igClicked = true; checkBoth(); };
-      wBtns.appendChild(igBtn);
+        let igBtn = document.createElement('button');
+        igBtn.className = 'btn btn-primary';
+        igBtn.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="margin-right:5px"><rect x="2" y="2" width="20" height="20" rx="4" fill="url(#instaGradSmall)"/><circle cx="12" cy="12" r="4" fill="none" stroke="#FFFFFF" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1.5" fill="#FFFFFF"/><defs><linearGradient id="instaGradSmall" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#fdf497"/><stop offset="40%" stop-color="#fd5949"/><stop offset="60%" stop-color="#d6249f"/><stop offset="100%" stop-color="#285aeb"/></linearGradient></defs></svg> Follow on Instagram';
+        igBtn.onclick = () => { window.open(CFG.instagram_link, '_blank'); igClicked = true; checkBoth(); };
+        wBtns.appendChild(igBtn);
     }
     function checkBoth() {
-      if(ytClicked && igClicked) {
-        document.getElementById('continueBtn').style.opacity = '1';
-        document.getElementById('continueBtn').disabled = false;
-      }
+        if(ytClicked && igClicked) {
+            document.getElementById('continueBtn').style.opacity = '1';
+            document.getElementById('continueBtn').disabled = false;
+        }
     }
     setTimeout(() => openModal('welcomeModal'), 500);
-  }
+} else if (!CFG.promo_popup_enabled) {
+    // Popup disabled - site loads directly without any popup
+    console.log("Promo popup disabled, loading site directly");
+}
 })();
 
 let currentJwtToken = null;
